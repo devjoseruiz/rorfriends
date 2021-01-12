@@ -1,24 +1,19 @@
-<p id="notice"><%= notice %></p>
+<%= render 'layouts/alert', :msg => notice %>
 
-<p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-5"><%= bootstrap_icon "person-circle", width: 32, height: 32 %> <%= @friend.first_name %> <%= @friend.last_name %></h1>
+  <button type="button" class="btn btn-info">
+    <span class="badge"><%= bootstrap_icon "envelope-fill" %> <%= @friend.email %></span>
+  </button>
+  <button type="button" class="btn btn-info">
+    <span class="badge"><%= bootstrap_icon "telephone-fill" %> <%= @friend.phone %></span>
+  </button>
+  <hr class="my-4">
 
-<p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @friend.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @friend.phone %>
-</p>
-
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+  <%= link_to edit_friend_path(@friend), class:"btn btn-warning" do %>
+    <%= bootstrap_icon "pencil-fill" %> Edit
+  <% end %>
+  <%= link_to friends_path, class:"btn btn-primary" do %>
+    <%= bootstrap_icon "back" %> Back
+  <% end %>
+</div>
