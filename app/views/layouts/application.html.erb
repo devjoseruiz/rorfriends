@@ -14,6 +14,8 @@
     <%= render 'layouts/navbar' %>
     <br>
     <div class="container">
+      <%= render 'layouts/alert', :msg => notice %>
+      <%= render 'layouts/alert', :msg => alert %>
       <%= yield %>
     </div>
   </body>
