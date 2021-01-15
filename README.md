@@ -1,24 +1,39 @@
-# README
+# RoRfriends
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Friends list CRUD app made with Ruby on Rails.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+This application requires:
 
-* System dependencies
+* Ruby version 3
+* Rails version 6
 
-* Configuration
+## Database
 
-* Database creation
+This application uses SQLite with ActiveRecord.
 
-* Database initialization
+## Development
 
-* How to run the test suite
+* Template Engine: ERB
+* Front-end Framework: Twitter Bootstrap (Sass)
+* Authentication: Devise
 
-* Services (job queues, cache servers, search engines, etc.)
+## Documentation and Support
 
-* Deployment instructions
+This is the only documentation.
 
-* ...
+## Contributing
+
+If you make improvements to this application, please share with others.
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Commit with Git.
+* Send the author a pull request.
+
+If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
+
+## License
+
+Licensed under GPLv3.
