@@ -2,6 +2,10 @@
 
 Friends list CRUD app made with Ruby on Rails.
 
+## Demo
+
+There is a demo deployed on Heroku: https://rorfriendswebapp.herokuapp.com/
+
 ## Requirements
 
 This application requires:
